@@ -227,7 +227,7 @@ justify-content: center;
  .nav-link,.icon{
   display: none;
  }
- .navbar .dot-icon .icon-2{
+ .navbar{
   display: flex;
  }
 
@@ -254,9 +254,14 @@ justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
 }
-.see-btn{
-  position: right bottom;
+.card{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
+.see-btn{
+  
+ }
 .Featured-container{
   flex-direction: column-reverse;
   grid-template-columns: repeat(1, 1fr);
@@ -264,6 +269,9 @@ justify-content: center;
 }
 .product{
   margin-bottom: 20px;
+}
+.gear-img{
+  margin-left: 40px;
 }
 .footer{
   width: 100%;
