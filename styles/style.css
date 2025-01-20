@@ -47,6 +47,7 @@ color: rgb(58, 58, 58);
  background-position: right;
 display: flex;
 }
+
 .container{
  font-weight: bold;
 }
@@ -223,12 +224,27 @@ justify-content: center;
     margin: 0 auto;
  }
 
+ .nav-link,.icon{
+  display: none;
+ }
+ .navbar .dot-icon .icon-2{
+  display: flex;
+ }
+
+ .dot-icon{
+  display: block;
+ }
+
 .banner-container{
   flex-direction: column-reverse;
   background-position: fixed;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
 }
+
+.camera-image{
+  padding-left: 0px;
+ }
 .our-sponsors{
   grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
