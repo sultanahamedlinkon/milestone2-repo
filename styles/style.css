@@ -1,0 +1,255 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background-color:whitesmoke ;
+ font-family: poppins;
+ width: ;
+}
+/* navbar style */
+.navbar{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ text-align: center;
+ margin-top: 80px;
+ margin-right: 40px;
+}
+.dot-icon{
+ display: none;
+}
+.first-title{
+ font-size: 24px;
+ padding-left: 70px;
+}
+.container{
+ list-style: none;
+ display: flex;
+gap: 30px;
+align-items: center;
+color: rgb(58, 58, 58);
+font-size: 16px;
+}
+.nav-link{
+ text-decoration: none;
+color: rgb(58, 58, 58);
+}
+
+
+/* banner section style */
+.banner-container{
+ margin-top: 90px;
+ background-image: url(../images/Circle\ design.svg);
+ background-repeat: no-repeat;
+ background-position: right;
+display: flex;
+}
+.container{
+ font-weight: bold;
+}
+.description{
+ margin-left:40px ;
+ align-items: center;
+ justify-content: center;
+ margin-top: 70px;
+}
+
+.book-btn{
+display: block;
+font-weight: bold;
+}
+
+.camera-image{
+ padding-left: 260px;
+}
+.banner-title{
+ font-size: 40px;
+ font-weight: bold;
+ color:rgb(58, 58, 58);
+ margin-bottom: 15px;
+}
+.banner-des{
+ font-size: 14px;
+ font-weight: bold;
+ color:rgb(58, 58, 58) ;
+ margin-bottom: 15px;
+}
+.book-btn{
+ background-color: rgb(224, 44, 109);
+ border: none;
+ height: 40px;
+ width: auto;
+ padding: 10px;
+ padding-bottom: 10px;
+ border-radius: 30px;
+color: white;
+}
+/* sponsor style */
+.our-sponsors{
+ text-align: center;
+ margin-top: 110px;
+}
+
+.logo{
+ padding: 25px;
+}
+/* image section */
+
+.card-section-title{
+ color: rgba(58, 58, 58, 1.00);
+ text-align: center;
+ margin-top: 120px;
+}
+
+.card-container{
+display: grid;
+background-color: #FFFFFF;
+grid-template-columns: repeat(3, 1fr);
+max-width: 1050px;
+margin: 0 auto;
+gap: 30px;
+position: relative;
+margin-top: 50px;
+}
+
+.card {
+   box-shadow: 4px 8px 16px silver;
+   padding: 10px;
+}
+.card img{
+  width: 100%;
+}
+
+.card-title{
+color:rgb(24, 25, 31);
+font-size: 25px;
+}
+.card-des{
+ color: rgb(120, 120, 133);
+ font-size: 12px;
+}
+
+.see-btn button{
+ color: rgb(224, 44, 109);
+ font-weight: bold;
+border: none;
+
+}
+.see-btn{
+ position: absolute;
+top:1100px ;
+
+ right: 0;
+ margin-top: 200px;
+}
+
+
+
+.Featured-container{
+ margin-top: 130px;
+ max-width: 1050px;
+ margin-left: 80px;
+}
+.Featured-container{
+ display: flex;
+}
+.product{
+ padding-top: 60px;
+ padding-left: 40px;
+}
+.product-title{
+ color: rgba(10, 8, 38, 1.00);
+ font-weight: bold;
+ font-size: 36px;
+
+}
+.product-des{
+ color: rgba(108, 108, 108, 1.00);
+ font-size: 16px;
+padding-top: 20px;
+}
+
+.join-btn{
+ background-color: rgba(224, 44, 109, 1.00);
+ height: 30px;
+ width: 100px;
+ border: none;
+ margin-top: 20px;
+ padding-top: 1px;
+ color: #FFFFFF;
+ 
+}
+.star-icon{
+ color: orange;
+}
+.star-icon:hover{
+ color: orange;
+}
+
+
+/* footer design */
+.footer{
+ background-color:rgb(10, 8, 38);
+ width: 100%;
+margin-top: 80px;
+text-align: center;
+padding-top: 40px;
+color: #FFFFFF;
+}
+.footer-title{
+ font-weight: bold;
+ font-size: 24px;
+}
+
+.footer-icon{
+ color: #FFFFFF;
+gap:30px ;
+display: flex;
+margin-top: 10px;
+justify-content: center;
+}
+
+/* responsive mobile device */
+/* navbar style */
+@media screen and (max-width:576px){
+ .navbar,
+ .container,
+ .nav-link{
+      flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+ }
+
+.banner-container{
+  flex-direction: column-reverse;
+  background-position: fixed;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+}
+.our-sponsors{
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.card-container{
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+}
+.see-btn{
+  position: right bottom;
+}
+.Featured-container{
+  flex-direction: column-reverse;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto;
+}
+.product{
+  margin-bottom: 20px;
+}
+.footer{
+  width: 100%;
+}
+}
