@@ -45,9 +45,7 @@ color: rgb(58, 58, 58);
 /* banner section style */
 .banner-container{
  margin-top: 90px;
- background-image: url(../images/Circle\ design.svg);
- background-repeat: no-repeat;
- background-position: right;
+
 display: flex;
 }
 
@@ -67,7 +65,7 @@ font-weight: bold;
 }
 
 .camera-image{
- padding-left: 260px;
+ /*padding-left: 260px;*/
 }
 .banner-title{
  font-size: 40px;
@@ -177,6 +175,11 @@ margin-top: 30px;
 padding-top: 20px;
 }
 
+.camera-image{
+  background-image: url(../images/Circle\ design.svg);
+  background-repeat: no-repeat;
+ background-size: 100% 100%;
+}
 .join-btn{
  background-color: rgba(224, 44, 109, 1.00);
  height: 30px;
@@ -218,6 +221,7 @@ justify-content: center;
 }
 
 /* responsive mobile device */
+
 /* navbar style */
 @media screen and (max-width:576px){
  
@@ -259,14 +263,14 @@ justify-content: center;
 }
 
 .camera-image{
-  width: 350px;
+  /*width: 350px;*/
   padding-left: 0px;
 }
  .camera-image img{
-   width: 350px;
-   margin: 0 auto;
-   padding-top: 110px;
-   padding-left: 120px;
+   width: 100%;
+   /*margin: 0 auto;*/
+   /*padding-top: 110px;*/
+  
  }
 .our-sponsors{
   grid-template-columns: repeat(4, 1fr);
@@ -298,7 +302,7 @@ justify-content: center;
   margin-bottom: 20px;
 }
 .gear-img img{
-  width: 400px;
+  width: 100%;
 }
 .footer{
   width: 100%;
