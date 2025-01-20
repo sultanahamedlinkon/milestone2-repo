@@ -21,6 +21,9 @@ body{
 .dot-icon{
  display: none;
 }
+.icon-3{
+  display: none;
+ }
 .first-title{
  font-size: 24px;
  padding-left: 70px;
@@ -140,11 +143,9 @@ border: none;
 
 }
 .see-btn{
- position: absolute;
-top:1100px ;
-
- right: 0;
- margin-top: 200px;
+ text-align: right;
+margin-right: 120px;
+margin-top: 30px;
 }
 
 
@@ -152,15 +153,18 @@ top:1100px ;
 .Featured-container{
  margin-top: 130px;
  max-width: 1050px;
- margin-left: 80px;
+
 }
 .Featured-container{
  display: flex;
+ margin-left: 90px;
 }
 .product{
  padding-top: 60px;
- padding-left: 40px;
+ margin-left: 40px;
+
 }
+
 .product-title{
  color: rgba(10, 8, 38, 1.00);
  font-weight: bold;
@@ -216,7 +220,7 @@ justify-content: center;
 /* responsive mobile device */
 /* navbar style */
 @media screen and (max-width:576px){
- .navbar,
+ 
  .container,
  .nav-link{
       flex-direction: column;
@@ -224,26 +228,45 @@ justify-content: center;
     margin: 0 auto;
  }
 
- .nav-link,.icon{
+ .container{
   display: none;
  }
  .navbar{
   display: flex;
+  align-items: center;
+ }
+ .first-title{
+  text-align: center;
+  padding-left: 20px;
  }
 
  .dot-icon{
   display: block;
+  margin-left: 30px;
  }
+ .icon-3{
+  display: block;
+ }
+
 
 .banner-container{
   flex-direction: column-reverse;
   background-position: fixed;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
+  
+ 
 }
 
 .camera-image{
+  width: 350px;
   padding-left: 0px;
+}
+ .camera-image img{
+   width: 350px;
+   margin: 0 auto;
+   padding-top: 110px;
+   padding-left: 120px;
  }
 .our-sponsors{
   grid-template-columns: repeat(4, 1fr);
@@ -260,18 +283,22 @@ justify-content: center;
   margin-top: 50px;
 }
 .see-btn{
-  
+ margin-left: 40px;
  }
 .Featured-container{
   flex-direction: column-reverse;
   grid-template-columns: repeat(1, 1fr);
   margin: 0 auto;
+  margin-left: 30px;
+}
+.product-des{
+  font-size: 13px;
 }
 .product{
   margin-bottom: 20px;
 }
-.gear-img{
-  margin-left: 40px;
+.gear-img img{
+  width: 400px;
 }
 .footer{
   width: 100%;
